@@ -1,0 +1,16 @@
+body{
+    background-color:rgb(163, 163, 163)
+}
+#container{
+    display:grid;
+    width: 432px;
+    height: 432px;
+    grid-template-rows: repeat(auto-fill, 27px);
+    grid-template-columns: repeat(auto-fill, 27px);
+}
+.squares{
+background-color: rgb(238, 238, 238);
+border:1px solid black;
+width: 25px;
+height: 25px;
+}
