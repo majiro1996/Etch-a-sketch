@@ -21,8 +21,7 @@ makeGrid(16,16);
 
 window.addEventListener('mousedown',function() {
     mouseIsDown = true;
-})
-
+});
 window.addEventListener('mouseup',function() {
     mouseIsDown = false;
 });
@@ -35,6 +34,11 @@ squares.forEach(square=>{
         square.style.backgroundColor=paintColor}
 
     });
+    square.addEventListener("click",function(){
+        square.style.backgroundColor=paintColor
+
+    });
+    
 });
 
 
