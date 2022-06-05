@@ -68,7 +68,12 @@ att.oninput= function(){
     let slider=document.querySelector("#sliderRange");
     slider.textContent="Grid size "+quantity+"x"+quantity;
 }
+//Buttons
+let eraser= document.querySelector("#eraser");
+eraser.addEventListener("click",function(){paintColor="white"});
 
+let black= document.querySelector("#black");
+black.addEventListener("click",function(){paintColor="black"});
 
 
 
