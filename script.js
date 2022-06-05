@@ -75,6 +75,9 @@ eraser.addEventListener("click",function(){paintColor="white"});
 let black= document.querySelector("#black");
 black.addEventListener("click",function(){paintColor="black"});
 
+let picker= document.querySelector("#picker");
+picker.addEventListener("input",function(){paintColor=picker.value});
+
 
 
 
