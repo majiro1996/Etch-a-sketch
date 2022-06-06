@@ -2,6 +2,7 @@
 let canSize=500;
 let quantity=16;
 let paintColor="black";
+let background="white"
 let mouseIsDown = false;
 //create the grid
 function makeGrid(number){
@@ -19,7 +20,7 @@ function makeGrid(number){
         }
 
     }
-    paint()
+    InsertEventListeners()
 }
 makeGrid(16);
 
@@ -39,7 +40,7 @@ window.addEventListener('mouseup',function() {
 });
 
 //change color event listener
-function paint(){
+function InsertEventListeners(){
     let squares=document.querySelectorAll(".squares");
     squares.forEach(square=>{
         square.style.height=(100/quantity)+"%";
@@ -65,7 +66,7 @@ let att=document.querySelector("#sizeSlider");
 att.oninput= function(){
     quantity=att.value;
     makeGrid(quantity);
-    let slider=document.querySelector("#sliderRange");
+    let slider=document.querySelector("#sliderText");
     slider.textContent="Grid size "+quantity+"x"+quantity;
 }
 //Buttons
@@ -77,7 +78,7 @@ black.addEventListener("click",function(){paintColor="black"});
 
 let picker= document.querySelector("#picker");
 picker.addEventListener("input",function(){paintColor=picker.value});
-
+//
 
 
 
